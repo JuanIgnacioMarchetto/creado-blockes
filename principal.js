@@ -14,13 +14,15 @@ function crearDivs() {
 
   // Configurar el estilo del contenedor
   contenedorDivs.style.display = 'grid';
-  contenedorDivs.style.gridTemplateColumns = `repeat(${numero}, 1fr)`;
+  contenedorDivs.style.gridTemplateColumns = `repeat(auto-fill, minmax(100px, 1fr))`;
   contenedorDivs.style.gap = '10px';
 
-  // Crear los divs y aplicar el color
+  // Crear los divs y aplicar el color y tamaño
   for (let i = 0; i < numero; i++) {
     const div = document.createElement('div');
     div.style.backgroundColor = color;
+    div.style.width = '100px';
+    div.style.height = '100px';
     contenedorDivs.appendChild(div);
   }
 }
