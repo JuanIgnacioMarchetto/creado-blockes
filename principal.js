@@ -2,6 +2,7 @@
 const numeroInput = document.getElementById('numero');
 const colorInput = document.getElementById('color');
 const contenedorDivs = document.getElementById('contenedor');
+const botonCrear = document.getElementById('boton-crear');
 
 // Función para crear los divs
 function crearDivs() {
@@ -24,6 +25,5 @@ function crearDivs() {
   }
 }
 
-// Evento para crear los divs cuando se cambia el número o el color
-numeroInput.addEventListener('input', crearDivs);
-colorInput.addEventListener('input', crearDivs);
+// Evento para crear los divs cuando se hace clic en el botón
+botonCrear.addEventListener('click', crearDivs);
